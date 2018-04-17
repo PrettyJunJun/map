@@ -27,3 +27,5 @@ class Commodity extends Admin
         return $this->fetch();
     }
 }
+
+//测试
