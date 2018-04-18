@@ -9,4 +9,9 @@ class Index extends Admin
 
         return $this->fetch();
     }
+
+    public function map(){
+
+        return $this->fetch();
+    }
 }
