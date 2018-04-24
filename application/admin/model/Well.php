@@ -2,7 +2,7 @@
 namespace app\admin\model;
 use think\Model;
 
-class User extends Model
+class Well extends Model
 {
 
 }

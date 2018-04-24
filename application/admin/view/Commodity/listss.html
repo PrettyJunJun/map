@@ -15,13 +15,22 @@
     <link rel="stylesheet" href="{$root}assets/css/amazeui.min.css"/>
     <link rel="stylesheet" href="{$root}assets/css/admin.css">
     <link rel="stylesheet" href="{$root}layui/css/layui.css">
+
+    <link rel="stylesheet" href="{$root}bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$root}bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$root}bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="{$root}bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{$root}bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" href="{$root}bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="{$root}bootstrap/js/npm.js">
+
     <script src="{$root}layui/layui.js" charset="utf-8"></script>
     <script src="{$root}assets/js/jquery.min.js"></script>
     <script src="{$root}assets/js/app.js"></script>
 </head>
 <!--[if lte IE 9]><p class="browsehappy">升级你的浏览器吧！ <a href="http://se.360.cn/" target="_blank">升级浏览器</a>以获得更好的体验！</p><![endif]-->
 </head>
-<body>
+<body style="height: 940px">
 <header class="am-topbar admin-header">
     <div class="am-topbar-brand"><img src="{$root}assets/i/logo.png"></div>
     <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
@@ -66,14 +75,14 @@
     <div class="nav-navicon admin-main admin-sidebar">
         <div class="sideMenu am-icon-dashboard" style="color:#aeb2b7; margin: 10px 0 0 0;"> 欢迎系统管理员：{$Think.session.login.nickname}</div>
         <div class="sideMenu">
-            <h3 class="am-icon-flag"><em></em> <a href="#">商品管理</a></h3>
+            <h3 style="font-size: 15px" class="am-icon-flag"><em></em> <a href="#">商品管理</a></h3>
             <ul>
                 <li><a href="{:url('commodity/lists')}">井盖列表</a></li>
                 <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('commodity/type')}">添加井盖类型</a></li>
                 <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('commodity/commodity')}">添加井盖信息</a></li>
                 <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('index/index')}">返回首页</a></li>
             </ul>
-            <h3 class="am-icon-cart-plus"><em></em> <a href="#"> 订单管理</a></h3>
+            <h3 style="font-size: 15px" class="am-icon-cart-plus"><em></em> <a href="#"> 订单管理</a></h3>
             <ul>
                 <li>订单列表</li>
                 <li>合并订单</li>
@@ -82,7 +91,7 @@
                 <li>发货单列表</li>
                 <li>换货单列表</li>
             </ul>
-            <h3 class="am-icon-users"><em></em> <a href="#">会员管理</a></h3>
+            <h3 style="font-size: 15px" class="am-icon-users"><em></em> <a href="#">会员管理</a></h3>
             <ul>
                 <li>会员列表 </li>
                 <li>未激活会员</li>
@@ -90,7 +99,7 @@
                 <li>会员推荐图</li>
                 <li>推荐列表</li>
             </ul>
-            <h3 class="am-icon-volume-up"><em></em> <a href="#">信息通知</a></h3>
+            <h3 style="font-size: 15px" class="am-icon-volume-up"><em></em> <a href="#">信息通知</a></h3>
             <ul>
                 <li>站内消息 /留言 </li>
                 <li>短信</li>
@@ -98,7 +107,7 @@
                 <li>微信</li>
                 <li>客服</li>
             </ul>
-            <h3 class="am-icon-gears"><em></em> <a href="#">系统设置</a></h3>
+            <h3 style="font-size: 15px" class="am-icon-gears"><em></em> <a href="#">系统设置</a></h3>
             <ul>
                 <li>数据备份</li>
                 <li>邮件/短信管理</li>
@@ -132,59 +141,103 @@
      </div>
     </div>
     <script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
-    <div style="text-align: center;width: 100%;height:60px;line-height:60px;font-size:17px;margin-top: 30px;background: cadetblue;color: ghostwhite";>添 加 井 盖</div>
+    <div style="text-align: center;width: 100%;height:60px;line-height:60px;font-size:17px;margin-top: 30px;background: cadetblue;color: ghostwhite";>井 盖 信 息 列 表</div>
 
-    <div  style="width:30%;margin-left: 290px;margin-top: 25px;">
-        <form class="layui-form" action="" method="post" enctype="multipart/form-data"><!--搜索提交-->
-            <div class="layui-form-item">
-                <label class="layui-form-label">名称</label>
-                <div class="layui-input-block">
-                    <input type="text" name="name"    autocomplete="off" class="layui-input" >
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label class="layui-form-label">类型</label>
-                <div class="layui-input-block">
-                    <select name="well_type_id" lay-filter="aihao">
-                        <option value=""></option>
-                        {if $data}
-                        {foreach $data as $val=>$key}
-                        <option value="{$key['type']}">{$key['name']}</option>
-                        {/foreach}
-                        {/if}
-                    </select>
-                </div>
-            </div>
-            {if isset($error)}
-            <div style="text-align: center;color: red;margin-bottom: 15px;">{$error}</div>
-            {/if}
-            <div class="layui-form-item">
-                <label class="layui-form-label">规格</label>
-                <div class="layui-input-block">
-                    <input type="text" name="spec" autocomplete="off" class="layui-input" >
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label class="layui-form-label">大小</label>
-                <div class="layui-input-block">
-                    <input type="text" name="size" autocomplete="off" class="layui-input" >
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label class="layui-form-label">井深</label>
-                <div class="layui-input-block">
-                    <input type="text" name="length" autocomplete="off" class="layui-input" >
-                </div>
-            </div>
-             <div style="width: 100px;height: 40px;overflow: hidden;position: relative;background: #009688;border-radius: 5px;margin-left: 110px;margin-top: 15px;">
-                 <div style="position: absolute;top: 10px;left: 15px;color: white"><i class="layui-icon">&#xe67c;</i>上传图片</div>
-                 <input style="width: 100%;height: 100%;opacity: 0" type="file" name="img">
-             </div>
-            <button style="width: 100px;height: 40px;margin-top: 15px;margin-left: 110px;" class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
-        </form>
+    <div  style="width: 70%;margin-left: 290px;margin-top: 25px;">
+        <table class="layui-table">
+            <colgroup>
+                <col width="50">
+                <col width="150">
+                <col width="200">
+                <col width="200">
+                <col width="200">
+            </colgroup>
+            <thead>
+            <tr>
+                <th><input id="input" type="checkbox" name=""> </th>
+                <th>id</th>
+                <th>名称</th>
+                <th>类型</th>
+                <th>大小</th>
+                <th>深度</th>
+                <th>图片</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            {foreach $list as $val =>$key}
+            <tbody>
+            <tr>
+                <td><input type="checkbox" name="Check[]" value="{$key.id}"></td>
+                <td>{$key.id}</td>
+                <td>{$key.name}</td>
+                <td>{$key.spec}</td>
+                <td>{$key.size}</td>
+                <td>{$key.length}</td>
+                <td><img class="xx" style="height: 45px" src="{$root}uploads/{$key.file}" alt=""></td>
+                <td>
+                    <div class="layui-btn layui-btn-xs" lay-event="edit"><a style="color: white" href="{:url('Commodity/Commodityy',['id'=>$key.id])}">编辑</a></div>
+                    <div class="layui-btn layui-btn-danger layui-btn-xs delete" lay-event="del" data-value="{$key.id}">删除</div>
+                </td>
+            </tr>
+            </tbody>
+            {/foreach}
+        </table>
     </div>
+  <div>
+</div>
+<div style="margin-left: 290px;"><button id="button" class="layui-btn"><i class="layui-icon"> 批量删除</i></button></div>
+<div style="margin-left: 290px">{$page}</div>
+<div id="hh" style="position:absolute;top: 0;width: 100%;height:0;display: none; background:rgba(0,0,0,.5);">
+    <img style="width: 500px;height:300px;margin-left: 35%;margin-top: 200px" src="" alt="">
+</div>
 <script>
+$('.xx').click(function (event) {
+    var height= document.body.clientHeight;//获取高度
+    $("#hh").height(height);
+    $('#hh').css('display','block');
+    var data = $(this).attr('src');
+    $('#hh img').attr('src',data);
+    event.stopPropagation();
+});
+$('body').click(function () {
+    $('#hh').css('display','none');
+})
+</script>
+<script>
+        $('#input').click(function () {
+            $("input[name='Check[]']").prop("checked",this.checked);
+        });
+        $('#button').click(function () {
+            layer.confirm('确认删除吗？操作不可逆',function(){
+                layer.closeAll();
+                    var checks = $("input[name='Check[]']:checked");
+                    if(checks.length == 0){
+                        layer.alert('未选中任何项！');return false;
+                    }
+                    //将获取的值存入数组
+                    var checkData = new Array();
+                    checks.each(function(){
+                        checkData.push($(this).val());
+                    });
+                    if(checkData.length > 0){
+                        $.ajax({
+                            data:{checkData:checkData},
+                            type:'post',
+                            url:'{:url("Commodity/batch")}',
+                            success:function (msg) {
+                                if(s == 1){
+                                    location.reload(true);
+                                }
+                            }
+                        })
+                    }
+            },function(){
+                //$this.prop('checked',!$this.prop('checked'));
+                //var text = $switch.find('em').text() =='NO' ? 'No':'Y';
+                //$switch.toggleClass('layui-form-onswitch').find('em').text(text);
+            })
 
+        })
 </script>
 <!--[if lt IE 9]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
@@ -197,15 +250,48 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="{$root}assets/js/amazeui.min.js"></script>
 <!--<![endif]-->
+
 <script>
-    layui.use(['form', 'layedit', 'laydate'], function(){
-        var form = layui.form
-            ,layer = layui.layer
-            ,layedit = layui.layedit
-            ,laydate = layui.laydate;
+    layui.use('upload', function(){
+        var upload = layui.upload;
+
+        //执行实例
+        var uploadInst = upload.render({
+            elem: '#test11' //绑定元素
+            ,url: '/upload/' //上传接口
+            ,done: function(res){
+                //上传完毕回调
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+        });
     });
 </script>
+<script>
+    $('.delete').click(function(){
+        var id = $(this).attr('data-value');
+        layer.confirm('确认删除吗？操作不可逆',function(){
+            layer.closeAll();
+           $.ajax({
+                data:{
+                    id:id
+                },
+                type:'post',
+                url:'{:url("Commodity/delte")}',
+                success:function(s){
+                  if(s == 1){
+                      location.reload(true);
+                  }
+                },
+            })
+        },function(){
+            //$this.prop('checked',!$this.prop('checked'));
+            //var text = $switch.find('em').text() =='NO' ? 'No':'Y';
+            //$switch.toggleClass('layui-form-onswitch').find('em').text(text);
+        })
 
-
+    })
+</script>
 </body>
 </html>

@@ -1,7 +1,6 @@
 <?php
 namespace app\admin\controller;
 use app\common\controller\Admin;
-use think\Db;
 
 class Login extends Admin
 {
@@ -11,7 +10,6 @@ class Login extends Admin
             $data = input('');
             $model = model('User');
             $sm = $model->where(['user'=>$data['user'],'password'=>$data['password']])->find();
-////            var_dump($sm);die;
             session('login',$sm);
             if($sm) {
                 $this->success('登陆成功', 'Index/index');
@@ -25,5 +23,4 @@ class Login extends Admin
         session('login',null);
         $this->success('退出成功', 'Login/login');
     }
-
 }

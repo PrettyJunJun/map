@@ -54,4 +54,5 @@ return [
     'builder'         => '',
     // Query类
     'query'           => '\\think\\db\\Query',
+
 ];

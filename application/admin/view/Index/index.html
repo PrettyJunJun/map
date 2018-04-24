@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>科翔后台管理</title>
+    <title>后台管理</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="icon" type="image/png" href="{$root}assets/i/favicon.png">
-
     <link rel="apple-touch-icon-precomposed" href="{$root}assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
     <link rel="stylesheet" href="{$root}assets/css/amazeui.min.css"/>
@@ -63,15 +62,17 @@
 </header>
 <div class="am-cf admin-main">
     <div class="nav-navicon admin-main admin-sidebar">
-        <div class="sideMenu am-icon-dashboard" style="color:#aeb2b7; margin: 10px 0 0 0;"> 欢迎系统管理员：{$Think.session.login.nickname}</div>
+        <div class="sideMenu am-icon-dashboard" style="color:#aeb2b7; margin: 10px 0 0 0;">欢迎系统管理员：{$Think.session.login.nickname}</div>
         <div class="sideMenu">
-            <h3 class="am-icon-flag"><em></em> <a href="#">商品管理</a></h3>
+            <h3 class="am-icon-flag"><em></em> <a href="#">管理</a></h3>
             <ul>
-                <li><a href="{:url('commodity/lists')}">商品列表</a></li>
-                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('commodity/commodity')}">添加新商品</a></li>
-                <li>用户评论</li>
-                <li>商品回收站</li>
-                <li>库存管理 </li>
+                <li><a href="{:url('commodity/lists')}">井盖列表</a></li>
+                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('commodity/type')}">添加井盖类型</a></li>
+                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('commodity/commodity')}">添加井盖信息</a></li>
+                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('Distance/distance')}">添加井盖距离信息</a></li>
+                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('index/index')}">返回首页</a></li>
+                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('Distance/xx')}">xx</a></li>
+
             </ul>
             <h3 class="am-icon-cart-plus"><em></em> <a href="#"> 订单管理</a></h3>
             <ul>
