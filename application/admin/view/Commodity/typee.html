@@ -8,10 +8,10 @@
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="icon" type="image/png" href="{$root}assets/i/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="{$root}assets/i/app-icon72x72@2x.png">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
     <link rel="stylesheet" href="{$root}assets/css/amazeui.min.css"/>
     <link rel="stylesheet" href="{$root}assets/css/admin.css">
     <link rel="stylesheet" href="{$root}layui/css/layui.css">
@@ -19,7 +19,8 @@
     <script src="{$root}assets/js/jquery.min.js"></script>
     <script src="{$root}assets/js/app.js"></script>
 </head>
-<!--[if lte IE 9]><p class="browsehappy">升级你的浏览器吧！ <a href="http://se.360.cn/" target="_blank">升级浏览器</a>以获得更好的体验！</p><![endif]-->
+<!--[if lte IE 9]><p class="browsehappy">升级你的浏览器吧！ <a href="http://se.360.cn/" target="_blank">升级浏览器</a>以获得更好的体验！</p>
+<![endif]-->
 </head>
 <body>
 <header class="am-topbar admin-header">
@@ -27,7 +28,8 @@
     <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
         <ul class="am-nav am-nav-pills am-topbar-nav admin-header-list">
             <li class="am-dropdown tognzhi" data-am-dropdown>
-                <button class="am-btn am-btn-primary am-dropdown-toggle am-btn-xs am-radius am-icon-bell-o" data-am-dropdown-toggle> 消息管理<span class="am-badge am-badge-danger am-round">6</span></button>
+                <button class="am-btn am-btn-primary am-dropdown-toggle am-btn-xs am-radius am-icon-bell-o"
+                        data-am-dropdown-toggle> 消息管理<span class="am-badge am-badge-danger am-round">6</span></button>
                 <ul class="am-dropdown-content">
                     <li class="am-dropdown-header">所有消息都在这里</li>
                     <li><a href="#">未激活会员 <span class="am-badge am-badge-danger am-round">556</span></a></li>
@@ -55,23 +57,31 @@
                         <option value="o">会员</option>
                     </select>
                 </p>
-                <p class="ycfg"><input type="text" class="am-form-field am-input-sm" placeholder="圆角表单域" /></p>
-                <p><button class="am-btn am-btn-xs am-btn-default am-xiao"><i class="am-icon-search"></i></button></p>
+                <p class="ycfg"><input type="text" class="am-form-field am-input-sm" placeholder="圆角表单域"/></p>
+                <p>
+                    <button class="am-btn am-btn-xs am-btn-default am-xiao"><i class="am-icon-search"></i></button>
+                </p>
             </li>
-            <li class="am-hide-sm-only" style="float: right;"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+            <li class="am-hide-sm-only" style="float: right;"><a href="javascript:;" id="admin-fullscreen"><span
+                    class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
         </ul>
     </div>
 </header>
 <div class="am-cf admin-main">
     <div class="nav-navicon admin-main admin-sidebar">
-        <div class="sideMenu am-icon-dashboard" style="color:#aeb2b7; margin: 10px 0 0 0;"> 欢迎系统管理员：{$Think.session.login.nickname}</div>
+        <div class="sideMenu am-icon-dashboard" style="color:#aeb2b7; margin: 10px 0 0 0;">
+            欢迎系统管理员：{$Think.session.login.nickname}
+        </div>
         <div class="sideMenu">
-            <h3 class="am-icon-flag"><em></em> <a href="#">商品管理</a></h3>
+            <h3 class="am-icon-flag"><em></em> <a href="#">井盖管理</a></h3>
             <ul>
                 <li><a href="{:url('commodity/lists')}">井盖列表</a></li>
-                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('commodity/type')}">添加井盖类型</a></li>
-                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('commodity/commodity')}">添加井盖信息</a></li>
-                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="{:url('index/index')}">返回首页</a></li>
+                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a
+                        href="{:url('commodity/type')}">添加井盖类型</a></li>
+                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a
+                        href="{:url('commodity/commodity')}">添加井盖信息</a></li>
+                <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a
+                        href="{:url('index/index')}">返回首页</a></li>
             </ul>
             <h3 class="am-icon-cart-plus"><em></em> <a href="#"> 订单管理</a></h3>
             <ul>
@@ -84,7 +94,7 @@
             </ul>
             <h3 class="am-icon-users"><em></em> <a href="#">会员管理</a></h3>
             <ul>
-                <li>会员列表 </li>
+                <li>会员列表</li>
                 <li>未激活会员</li>
                 <li>团队系谱图</li>
                 <li>会员推荐图</li>
@@ -92,7 +102,7 @@
             </ul>
             <h3 class="am-icon-volume-up"><em></em> <a href="#">信息通知</a></h3>
             <ul>
-                <li>站内消息 /留言 </li>
+                <li>站内消息 /留言</li>
                 <li>短信</li>
                 <li>邮件</li>
                 <li>微信</li>
@@ -115,13 +125,13 @@
         <!-- sideMenu End -->
         <script type="text/javascript">
             jQuery(".sideMenu").slide({
-                titCell:"h3", //鼠标触发对象
-                targetCell:"ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
-                effect:"slideDown", //targetCell下拉效果
-                delayTime:300 , //效果时间
-                triggerTime:150, //鼠标延迟触发时间（默认150）
-                defaultPlay:true,//默认是否执行效果（默认true）
-                returnDefault:true //鼠标从.sideMen移走后返回默认状态（默认false）
+                titCell: "h3", //鼠标触发对象
+                targetCell: "ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+                effect: "slideDown", //targetCell下拉效果
+                delayTime: 300, //效果时间
+                triggerTime: 150, //鼠标延迟触发时间（默认150）
+                defaultPlay: true,//默认是否执行效果（默认true）
+                returnDefault: true //鼠标从.sideMen移走后返回默认状态（默认false）
             });
         </script>
     </div>
@@ -132,14 +142,16 @@
     </div>
 </div>
 <script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
-<div style="text-align: center;width: 100%;height:60px;line-height:60px;font-size:17px;margin-top: 30px;background: cadetblue;color: ghostwhite";>修 改 类 型</div>
+<div style="text-align: center;width: 100%;height:60px;line-height:60px;font-size:17px;margin-top: 30px;background: cadetblue;color: ghostwhite"
+     ;>修 改 类 型
+</div>
 
 <div style="width:30%;margin-left: 290px;margin-top: 25px;">
     <form class="layui-form" action="" method="post" enctype="multipart/form-data"><!--搜索提交-->
         <div class="layui-form-item">
             <label class="layui-form-label">类型名</label>
             <div class="layui-input-block">
-                <input type="text" name="name" autocomplete="off" class="layui-input" >
+                <input type="text" name="name" autocomplete="off" class="layui-input" value="{$data.name}">
                 {if isset($cw.name)}
                 <div style="text-align: center;color: red;;margin-top: 15px;">{$cw.name}</div>
                 {/if}
@@ -148,13 +160,15 @@
         <div class="layui-form-item">
             <label class="layui-form-label">类型值</label>
             <div class="layui-input-block">
-                <input type="text" name="type" autocomplete="off" class="layui-input" >
+                <input type="text" name="type" autocomplete="off" class="layui-input" value="{$data.type}">
                 {if isset($cw.type)}
                 <div style="text-align: center;color: red;;margin-top: 15px;">{$cw.type}</div>
                 {/if}
             </div>
         </div>
-            <button style="width: 100px;height: 40px;margin-top: 15px;margin-left: 110px" class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+        <button style="width: 100px;height: 40px;margin-top: 15px;margin-left: 110px" class="layui-btn" lay-submit=""
+                lay-filter="demo1">立即提交
+        </button>
     </form>
 </div>
 <script>
