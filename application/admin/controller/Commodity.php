@@ -179,4 +179,32 @@ class Commodity extends Admin
         }
     }
 
+    //>>修改井盖类型
+    public function sewer()
+    {
+        if (request()->isPost()) {
+            $data = input('');
+            $model = model('Well');
+//                var_dump($model);die;
+            $model->where(['id' => $data['id']])->update($data);
+            $this->success('修改成功', 'Distance/sewer');
+
+        }
+        //>>回显
+        $id = input('id');
+        $model = model('Well');
+        $data = $model->where(['id' => $id])->find();
+        $this->assign('data', $data);
+        return $this->fetch();
+    }
+
+    //>>删除井盖类型
+    public function off()
+    {
+        if (request()->isAjax()) {
+            $id = input('id');
+            $model = model('Well');
+            $model->where(['id' => $id])->delete();
+        }
+    }
 }
