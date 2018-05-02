@@ -48,8 +48,8 @@ class Distance extends Admin
         return $this->fetch();
     }
 
-    //>>查询出街道对应信息
+    //>>查询出街道对应相关信息
     public function street(){
-        
+
     }
 }
