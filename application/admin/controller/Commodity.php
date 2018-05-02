@@ -179,7 +179,7 @@ class Commodity extends Admin
         }
     }
 
-    //>>修改井盖类型
+    //>>修改井盖属性类型
     public function sewer()
     {
         if (request()->isPost()) {
