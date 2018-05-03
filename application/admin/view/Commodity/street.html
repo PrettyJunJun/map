@@ -150,22 +150,21 @@
 <div style="width:30%;margin-left: 290px;margin-top: 25px;">
     <form class="layui-form" action="" method="post" enctype="multipart/form-data"><!--搜索提交-->
         <div class="layui-form-item">
-            <label class="layui-form-label">类型名</label>
+            <label class="layui-form-label">街道名</label>
             <div class="layui-input-block">
-                <input type="text" name="name" autocomplete="off" class="layui-input" value="{$data.name}">
-                {if isset($cw.name)}
-                <div style="text-align: center;color: red;;margin-top: 15px;">{$cw.name}</div>
-                {/if}
+                <input type="text" name="name" autocomplete="off" class="layui-input" value="">
+
+                <div style="text-align: center;color: red;;margin-top: 15px;"></div>
+
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">类型值</label>
             <div class="layui-input-block">
-                <input type="text" name="well_type_id" autocomplete="off" class="layui-input"
-                       value="{$data.well_type_id}">
-                {if isset($cw.well_type_id)}
-                <div style="text-align: center;color: red;;margin-top: 15px;">{$cw.well_type_id}</div>
-                {/if}
+                <input type="text" name="well_type_id" autocomplete="off" class="layui-input" value="">
+
+                <div style="text-align: center;color: red;;margin-top: 15px;"></div>
+
             </div>
         </div>
         <button style="width: 100px;height: 40px;margin-top: 15px;margin-left: 110px" class="layui-btn" lay-submit=""
