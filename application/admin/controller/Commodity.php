@@ -205,6 +205,7 @@ class Commodity extends Admin
             $id = input('id');
             $model = model('Well');
             $model->where(['id' => $id])->delete();
+            echo 1;
         }
     }
 

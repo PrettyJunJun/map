@@ -7,21 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ac9e0ca-2a23-4b93-addd-428b2c13ace7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/admin/view/Commodity/street.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/Distance/street.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Commodity.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Commodity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Distance.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Distance.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/Commodity/commodity.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Commodity/commodity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/Commodity/commodityy.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Commodity/commodityy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/Commodity/lists.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Commodity/lists.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/Commodity/listss.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Commodity/listss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/Commodity/sewer.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Commodity/sewer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/Commodity/type.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Commodity/type.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/Commodity/typee.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Commodity/typee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/Distance/distance.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Distance/distance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/Distance/sewer.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Distance/sewer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/Index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/Index/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +27,8 @@
       <file leaf-file-name="Commodity.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Commodity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="201" column="25" lean-forward="true" selection-start-line="201" selection-start-column="25" selection-end-line="201" selection-end-column="25" />
+            <state relative-caret-position="561">
+              <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
               <folding>
                 <element signature="e#40#72#0#PHP" expanded="true" />
               </folding>
@@ -50,8 +39,8 @@
       <file leaf-file-name="Distance.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Distance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="-67">
+              <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
               <folding>
                 <element signature="e#40#72#0#PHP" expanded="true" />
               </folding>
@@ -62,11 +51,20 @@
       <file leaf-file-name="street.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/Distance/street.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1889">
-              <caret line="83" column="14" lean-forward="true" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+            <state relative-caret-position="495">
+              <caret line="94" column="17" lean-forward="true" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commodity.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/Commodity/commodity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="659">
+              <caret line="197" column="37" lean-forward="true" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -83,8 +81,8 @@
       <file leaf-file-name="sewer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/Distance/sewer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+            <state relative-caret-position="7590">
+              <caret line="230" column="26" selection-start-line="230" selection-start-column="26" selection-end-line="230" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -134,11 +132,9 @@
         <option value="$PROJECT_DIR$/application/admin/view/coordinate/test.php" />
         <option value="$PROJECT_DIR$/application/admin/view/coordinate/java.php" />
         <option value="$PROJECT_DIR$/application/admin/view/Street/index.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Commodity.php" />
         <option value="$PROJECT_DIR$/application/admin/view/Distance/sewer.html" />
         <option value="$PROJECT_DIR$/application/admin/view/Distance/street.html" />
         <option value="$PROJECT_DIR$/application/admin/view/Index/index.html" />
-        <option value="$PROJECT_DIR$/application/admin/view/Commodity/commodity.html" />
         <option value="$PROJECT_DIR$/application/admin/view/Commodity/commodityy.html" />
         <option value="$PROJECT_DIR$/application/admin/view/Commodity/lists.html" />
         <option value="$PROJECT_DIR$/application/admin/view/Commodity/listss.html" />
@@ -148,6 +144,8 @@
         <option value="$PROJECT_DIR$/application/admin/view/Commodity/typee.html" />
         <option value="$PROJECT_DIR$/application/admin/view/Distance/distance.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Distance.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Commodity.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/Commodity/commodity.html" />
       </list>
     </option>
   </component>
@@ -202,8 +200,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="430" />
-    <option name="y" value="18" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="956" />
   </component>
@@ -397,15 +395,16 @@
       <workItem from="1524875087044" duration="3078000" />
       <workItem from="1525222667967" duration="3044000" />
       <workItem from="1525307623351" duration="5012000" />
-      <workItem from="1525315109212" duration="7089000" />
+      <workItem from="1525315109212" duration="10363000" />
+      <workItem from="1525393816289" duration="4218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168894000" />
+    <option name="totallyTimeSpent" value="176386000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -620,10 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -631,10 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,9 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,33 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Commodity/commodity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/Distance/street.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1889">
-          <caret line="83" column="14" lean-forward="true" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Distance.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#72#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -705,15 +666,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/Distance/sewer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+        <state relative-caret-position="7590">
+          <caret line="230" column="26" selection-start-line="230" selection-start-column="26" selection-end-line="230" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Distance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+          <folding>
+            <element signature="e#40#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/Distance/street.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="94" column="17" lean-forward="true" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/Commodity/commodity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="197" column="37" lean-forward="true" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Commodity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="201" column="25" lean-forward="true" selection-start-line="201" selection-start-column="25" selection-end-line="201" selection-end-column="25" />
+        <state relative-caret-position="561">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>
