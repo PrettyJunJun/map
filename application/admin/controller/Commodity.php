@@ -209,5 +209,10 @@ class Commodity extends Admin
         }
     }
 
+    //>>地图显示
+    public function map()
+    {
+        return $this->fetch();
+    }
 
 }
