@@ -168,6 +168,8 @@
         <tr>
             <th>井盖名称</th>
             <th>所属类型</th>
+            <th>X坐标</th>
+            <th>Y坐标</th>
             <th>操作</th>
         </tr>
         </thead>
@@ -176,6 +178,8 @@
         <tr>
             <td>{$key.name}</td>
             <td>{$key.well_name}</td>
+            <td>{$key.x}</td>
+            <td>{$key.y}</td>
             <td>
                 <div class="layui-btn layui-btn-xs" lay-event="edit"><a style="color: white"
                                                                         href="{:url('Commodity/sewer',['id'=>$key.id])}">编辑</a>

@@ -38,7 +38,7 @@ class Distance extends Admin
         $data = Db::table('well')
             ->alias('t1')
             ->join('well_type t2', 't1.well_type_id = t2.type', 'LEFT')
-            ->field('t1.name,t2.well_name,t1.id')
+            ->field('t1.name,t2.well_name,t1.id,t1.x,t1.y')
             ->select();
 //        $model = model('Well');
 //        $data = $model->select();
@@ -55,11 +55,11 @@ class Distance extends Admin
         $data = Db::table('street')
             ->alias('t1')
             ->join('well t2', 't1.street_id=t2.well_street_id', 'LEFT')
-            ->join('well_type t3', 't2.well_type_id=t3.type','LEFT')
+            ->join('well_type t3', 't2.well_type_id=t3.type', 'LEFT')
             ->field('t1.street_name,t2.`name`,t3.well_name')
             ->select();
 //        var_dump($data);die;
-        $this->assign('data',$data);
+        $this->assign('data', $data);
         return $this->fetch();
     }
 }
