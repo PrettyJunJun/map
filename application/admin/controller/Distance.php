@@ -98,11 +98,16 @@ class Distance extends Admin
             $i = 0;
             foreach ($excel_array as $k => $v) {
                 $data[$k]['name'] = $v[0];
-                $data[$k]['sex'] = $v[1];
+                $data[$k]['wdeep'] = $v[1];
+                $data[$k]['pcode'] = $v[2];
+                $data[$k]['spec'] = $v[3];
+                $data[$k]['msize'] = $v[4];
+                $data[$k]['hsize'] = $v[5];
+                $data[$k]['well_street_id'] = $v[6];
+                $data[$k]['well_type_id'] = $v[7];
                 $i++;
             }
-            $success = Db::name('excel')->insertAll($data); //批量插入数据
-            //$i=
+            $success = Db::name('well')->insertAll($data); //批量插入数据
             $error = $i - $success;
             echo "总{$i}条，成功{$success}条，失败{$error}条。";
 //             Db::name('t_station')->insertAll($city); //批量插入数据
