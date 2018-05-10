@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>导入文件</title>
     <link rel="stylesheet" href="__ADMIN__/common/frame/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/special/css/style.css">
+    <style>
+        .layui-fluid {
+            position: absolute;
+            top: 33%;
+            right: 45%;
+        }
+    </style>
     <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
 </head>
-<body>
-
+<body style="background: #36b69e">
+<canvas id="c"></canvas>
 <div class="layui-fluid">
     <form method="post" action="{:url('distance/addExcel')}" class="form-signin" enctype="multipart/form-data">
         <input name="excel" type="file" class="form-control">
@@ -16,6 +24,26 @@
     </form>
 </div>
 <script src="__ADMIN__/common/frame/layui/layui.js"></script>
+<script src="__PUBLIC__/special/js/index.js"></script>
+<script id="shader-fs" type="x-shader/x-fragment">
+				#ifdef GL_ES
+				precision highp float;
+				#endif
+    		void main(void) {
+    		 gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+    		}
+</script>
+
+<script id="shader-vs" type="x-shader/x-vertex">
+    attribute vec3 vertexPosition;
+  	uniform mat4 modelViewMatrix;
+  	uniform mat4 perspectiveMatrix;
+
+   	void main(void) {
+  		gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+  	}
+
+</script>
 <script>
     layui.use(['laypage', 'table', 'element', 'layer', 'jquery', 'form'], function () {
         var table = layui.table;
@@ -24,8 +52,6 @@
         element = layui.element;
         form = layui.form;
         $ = layui.$;
-
-
     });
 </script>
 </body>

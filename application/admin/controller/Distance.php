@@ -107,10 +107,14 @@ class Distance extends Admin
                 $data[$k]['well_type_id'] = $v[7];
                 $i++;
             }
-            $success = Db::name('well')->insertAll($data); //批量插入数据
+            //>>批量插入数据
+            $success = Db::name('well')->insertAll($data);
             $error = $i - $success;
-            echo "总{$i}条，成功{$success}条，失败{$error}条。";
-//             Db::name('t_station')->insertAll($city); //批量插入数据
+            echo "<script language='JavaScript'>
+                    alert('总{$i}条，成功{$success}条，失败{$error}条');
+                    window.location = 'http://www.tp5.com/admin/distance/excel.html';
+                    </script>
+                    ";
         } else {
             //>>上传失败获取错误信息
             echo $file->getError();
