@@ -106,12 +106,13 @@
                                 //>>获取所有的省级行政单位
                                 province[code] = data[code];
                                 if (options.required && !options.province) {
-                                    //>>省未填，并判断为直辖市
+                                    //>>如果省级未填，并判断是否为直辖市
                                     if (options.city && !(options.city % 1e4)) {
                                         options.province = options.city;
                                     } else {
                                         options.province = code;
                                     }
+                                    //>>isNaN()检查其参数是否是非数字值--- 返回 false或true
                                 } else if (isNaN(options.province) && data[code].indexOf(options.province) > -1) {
                                     options.province = code;
                                 }
@@ -124,6 +125,7 @@
                                         city[code] = data[code];
                                         if (options.required && !options.city) {
                                             options.city = code;
+                                            //>>indexOf()返回某个指定的字符串值在字符串中首次出现的位置
                                         } else if (isNaN(options.city) && data[code].indexOf(options.city) > -1) {
                                             options.city = code;
                                         }
