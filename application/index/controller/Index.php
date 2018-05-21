@@ -7,6 +7,7 @@ class Index extends Indexx{
 	
     public function index()
     {
+    	echo 1;
         return $this->fetch();
     }
     public function index_ajax()
