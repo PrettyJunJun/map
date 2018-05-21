@@ -1,14 +1,14 @@
 <?php
 namespace app\index\controller;
-use app\common\Controller;
-class Index extends Reception
-{
+use app\common\controller;
+
+class Index extends Indexx{
     public function index()
     {
-
-        return $this->fetch();
-     }
-    public function index_ajax(){
+        echo 1;
+        //return $this->fetch();
+    }
+    /*public function index_ajax(){
     	if(request()->isAjax()){
     		$name = input('name');
     		
@@ -18,5 +18,5 @@ class Index extends Reception
     		
     		
     	}
-    }
+    }*/
 }
