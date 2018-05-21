@@ -17,7 +17,7 @@ class Index extends Indexx{
     		$data = db('well')->where('name',$name)->find();
     		if($data){
     			$sm = json_encode($data);
-    			echo $sm;
+    			echo $sm;;
     		}else{
     			echo(1);
     		}
