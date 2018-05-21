@@ -14,7 +14,7 @@ class Index extends Index
     		if($name){
 	    		$data = Db::table('well')->where(['name'=>$name])->find();
 	    		$sm = json_encode($data)
-	    		echo($sm);
+	    		//echo($sm);
     		}
     		
     	}
