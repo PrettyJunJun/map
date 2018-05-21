@@ -16,6 +16,7 @@ class Index extends Indexx{
     		$name = input('data');
     		$data = db('well')->where('name',$name)->find();
     		$sm = json_encode($data);
+    		
     		echo($sm);
     	}
     }
