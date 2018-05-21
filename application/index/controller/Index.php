@@ -13,7 +13,7 @@ class Index extends Index
     		$name = input('name');
     		$data = Db::table('well')->where(['name'=>$name])->find();
     		$data = json_encode($data)
-    		echo $data;
+    		pr($data);
     	}
     }
 }
