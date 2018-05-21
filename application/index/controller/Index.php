@@ -1,11 +1,19 @@
 <?php
 namespace app\index\controller;
-use \think\Controller;
-class Index extends  Controller
+use app\common\Controller;
+class Index extends Index
 {
     public function index()
     {
 
-        return '这是前台';
+        return $this->fetch();
      }
+    public function index_ajax(){
+    	if(request()->isAjax()){
+    		$name = input('name');
+    		$data = Db::table('well')->where(['name'=>$name])->find();
+    		$data = json_encode($data)
+    		echo $data;
+    	}
+    }
 }
