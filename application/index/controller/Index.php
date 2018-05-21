@@ -15,8 +15,15 @@ class Index extends Indexx{
     	if(request()->isAjax()){
     		$name = input('data');
     		$data = db('well')->where('name',$name)->find();
-    		$sm = json_encode($data);
-    		echo($sm);
+    		if($data){
+    			$sm = json_encode($data);
+    			echo $sm;
+    		}else{
+    			echo(1);
+    		}
+    		
+    		
+    	
     	}
     }
 }

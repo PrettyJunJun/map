@@ -6,7 +6,8 @@
     <script src="{$root}jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-	<!--<script type="text/javascript">
+	<div id="cs" style="width: 100px;height: 100px;border: 1px solid red;"></div>
+	<script type="text/javascript">
 		$('#cs').click(function(){
 			var zz = 'wsxj001285';
 			$.ajax({
@@ -14,13 +15,19 @@
 			type:"post",
 			url:"{:url('index/index/index_ajax')}",
 			success:function(msg){
-				console.log(msg)
+				if(msg == 1){
+					alert('没有数据');
+				}else{
+					console.log(msg)
+				}
+					
+				
 			},
 			
 		   });
 		})
 		
-	</script>-->
+	</script>
 	<div class="a">功能展示</div>
 	<div class="a1">用实践见证我们的实力</div>
     <div class="a2">
