@@ -1,7 +1,7 @@
 <?php
 namespace app\index\controller;
 use app\common\Controller;
-class Index extends Indexx
+class Index extends Reception
 {
     public function index()
     {
