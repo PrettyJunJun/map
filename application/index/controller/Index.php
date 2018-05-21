@@ -11,11 +11,11 @@ class Index extends Index
     public function index_ajax(){
     	if(request()->isAjax()){
     		$name = input('name');
-    		if($name){
-	    		$data = Db::table('well')->where(['name'=>$name])->find();
-	    		$sm = json_encode($data)
-	    		//echo($sm);
-    		}
+    		
+    		$data = Db::table('well')->where(['name'=>$name])->find();
+    		$sm = json_encode($data);
+    		//echo($sm);
+    		
     		
     	}
     }
